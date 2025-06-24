@@ -1,0 +1,248 @@
+patch:
+  style:
+    color_scheme: macos14
+    color_scheme_dark: macos14_dark
+
+    candidate_list_layout: linear # stacked | linear       皮肤横竖排显示是调整这个
+    text_orientation: horizontal # horizontal | vertical  文字方向
+
+    inline_preedit: true # true | false  键入码显示位置
+    inline_candidate: false # true | false  选中词显示位置
+
+    # Whether candidate panel stick to screen edge to reduce jumping
+    memorize_size: true
+    # Whether transparent colors stack on each other
+    mutual_exclusive: false
+    # Whether to use a translucent background. Only visible when background color is transparent
+    translucency: false
+
+    corner_radius: 7
+    hilited_corner_radius: 0
+    border_height: -2
+    border_width: -2
+    # Space between candidates in stacked layout
+    line_spacing: 5
+    # Space between preedit and candidates in non-inline mode
+    spacing: 8
+    # A number greater than 0 renders shadow around high-lighted candidate
+    shadow_size: 0
+    # Controls non-hililighted candidate background size, relative to highlighted
+    # Nagetive means shrink, positive meas expand
+    #surrounding_extra_expansion: 0
+
+    # format using %@ and %c is deprecated since 1.0, Squirrel 1.0
+    # %@ is automatically expanded to "[candidate] [comment]"
+    # and %c is replaced by "[label]"
+    candidate_format: "[label]. [candidate] [comment]" # 候选项格式化
+
+    # adjust the base line of text
+    #base_offset: 0
+    font_face: "LXGW WenKai"
+    font_point: 15
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 12
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 12
+    
+  preset_color_schemes:
+    macos12_light:
+      name: "高仿亮色 macOS"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 15
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 12
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 13
+
+      candidate_format: "[label]\u2004[candidate] [comment]"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: 6
+      border_width: 2
+      line_spacing: 1
+
+      color_space: display_p3
+      back_color: 0xFFFFFF
+      border_color: 0xFFFFFF
+      candidate_text_color: 0xD8000000
+      comment_text_color: 0x3F000000
+      label_color: 0x7F7F7F
+      hilited_candidate_back_color: 0xD05925
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0x808080
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
+
+    macos12_dark:
+      name: "高仿暗色 macOS"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 15
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 12
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 13
+
+      candidate_format: "[label]\u2004[candidate] [comment]"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: 6
+      border_width: 2
+      line_spacing: 1
+
+      color_space: display_p3
+      back_color: 0x1E1F24
+      border_color: 0x1E1F24
+      candidate_text_color: 0xE8E8E8
+      comment_text_color: 0x3F000000
+      label_color: 0x7C7C7C
+      hilited_candidate_back_color: 0xDA6203
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0x808080
+      hilited_candidate_label_color: 0xFFE7D6
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
+
+    wechat:
+      name: "高仿微信输入法"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 15
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 12
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 12
+
+      candidate_format: "[label]\u2005[candidate] [comment]"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: 7
+      border_height: -2
+
+      color_space: display_p3
+      back_color: 0xFFFFFF
+      border_color: 0xFFFFFF
+      candidate_text_color: 0x444444
+      comment_text_color: 0x8E8E8E
+      label_color: 0x888785
+      hilited_candidate_back_color: 0x7BAE4F
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xF0F0F0
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0xFFFFFF
+      hilited_text_color: 0xD8000000
+
+    wechat_dark:
+      name: "高仿暗色微信输入法"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 15
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 12
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 12
+
+      candidate_format: "[label]\u2005[candidate] [comment]"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: 7
+      border_height: -2
+
+      color_space: display_p3
+      back_color: 0x151515
+      border_color: 0x151515
+      candidate_text_color: 0xB9B9B9
+      comment_text_color: 0x8E8E8E
+      label_color: 0x888785
+      hilited_candidate_back_color: 0x74A54B
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xF0F0F0
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0xFFFFFF
+      hilited_text_color: 0x777777
+
+    macos14:
+      name: "高仿 macOS 14"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 16
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 8
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 13
+
+      candidate_format: "[label]\u2003\u2003\u2003[candidate] [comment]\u2004\u2001"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: -1
+      border_height: -4
+      border_width: 2
+
+      color_space: display_p3
+      back_color: 0xE7E8EA
+      border_color: 0xE7E8EA
+      candidate_text_color: 0x464647
+      comment_text_color: 0x3F000000
+      label_color: 0x7F7F7F
+      hilited_candidate_back_color: 0xD05925
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xDCDCDC
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
+
+    macos14_dark:
+      name: "高仿暗色 macOS 14"
+      author: "Lufs X <i@isteed.cc>"
+
+      # font_face: "PingFangSC-Regular"
+      # font_point: 16
+      # label_font_face: "PingFangSC-Regular"
+      # label_font_point: 8
+      # comment_font_face: "PingFangSC-Regular"
+      # comment_font_point: 13
+
+      candidate_format: "[label]\u2003\u2003\u2003[candidate] [comment]\u2004\u2001"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+
+      corner_radius: 7
+      hilited_corner_radius: -1
+      border_height: -4
+      border_width: 2
+
+      color_space: display_p3
+      back_color: 0x555557
+      border_color: 0x0C0C0C
+      candidate_text_color: 0xEEEEEE
+      comment_text_color: 0x80FFFFFF
+      label_color: 0x7C7C7C
+      hilited_candidate_back_color: 0xCA5824
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xF0F0F0
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
